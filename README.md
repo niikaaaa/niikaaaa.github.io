@@ -1,2 +1,2 @@
 # niikaaaa.github.io
-moj pervy hosting
+mu ne emo mu ne panki mu podryzhki le..
