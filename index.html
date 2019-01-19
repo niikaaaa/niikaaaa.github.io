@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+</head>
+<body>
+<script>
+function plus(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)+Number(B);
+}
+function minus(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)-Number(B);
+}
+function proizv(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)*Number(B);
+}
+function chast(){
+var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML =Number(A)/Number(B);
+}
+function deleniesostatkom (){
+  var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf1").innerHTML = Number(A) % Number (B); 
+}
+function chastnoedelenie (){
+   var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+document.getElementById("inf2").innerHTML = Number(A) % Number (B); 
+document.getElementById("inf1").innerHTML = (Number(A) - Number(A) % Number (B)) / Number(B); 
+}
+function deleniepomodulu (){
+   var A=document.getElementById("IN1").value;
+var B=document.getElementById("IN2").value;
+var C =document.getElementById("IN3").value;
+if (Number(A)%Number(C) > Number(B) % Number (C)) {
+document.getElementById("inf1").innerHTML =Number(A)%Number(C)}
+else{ document.getElementById("inf1").innerHTML =  Number(B) % Number (C)
+}
+}
+function nod (){
+    var A=Number(document.getElementById("IN1").value);
+var B=Number(document.getElementById("IN2").value);
+  while (A !=B) {
+    if (A>B){
+    A=A-B}
+  
+  else{ B=B-A}}
+document.getElementById("inf1").innerHTML = A;
+}
+  
+
+
+</script>
+<button onclick="plus()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="proizv()">*</button>
+<button onclick="chast()">/</button>
+<button onclick="deleniesostatkom()">%</button>
+<button onclick="chastnoedelenie()">\</button>
+<button onclick="deleniepomodulu()">;</button>
+<button onclick="nod()">//</button>
+<br>
+<br>
+<input type="text" value="0" id="IN1">
+<br>
+<br>
+<input type="text" value="0" id="IN2">
+<br>
+<br>
+<input type="text" value="0" id="IN3">
+<div id="inf1"></div>
+<div id="inf2"></div>
+</body>
+</html>
+
+
+
+
+Ответить
+Переслать
